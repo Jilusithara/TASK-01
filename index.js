@@ -1,13 +1,10 @@
-console.log("INDEX FILE IS RUNNING");
-
-import express from express;
+const express = require("express");
 const app = express();
 
-
 app.get("/", (req, res) => {
-  res.send("Hello World ");
+  res.send("Hello World 🌍");
 });
 
 app.listen(3000, () => {
-
+  console.log("Server running on http://localhost:3000");
 });
